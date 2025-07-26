@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Package Delivery</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Firebase SDKs (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDkzGGkyYGVP5tMaqQof1HKTE9bwiysI08",
+      authDomain: "packagedeliverytracker.firebaseapp.com",
+      projectId: "packagedeliverytracker",
+      storageBucket: "packagedeliverytracker.appspot.com",
+      messagingSenderId: "372105721161",
+      appId: "1:372105721161:web:74bc582fa9389474531698",
+      measurementId: "G-3TFD254CXX"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email"   placeholder="Email"    required>
+      <input type="password"placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="register.html">Register</a></p>
+    </form>
+  </div>
+
+  <!-- Auth logic -->
+  <script src="js/auth.js"></script>
+</body>
+</html>
